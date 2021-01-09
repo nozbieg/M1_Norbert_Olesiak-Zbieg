@@ -28,6 +28,6 @@ public class DogImageApiServiceImplTest {
     @Test
     public void testGetDogImagesByBreed() throws Exception{
         DogImageByBreed dogImages = apiService.getDogImagesByBreed("akita");
-        Assertions.assertEquals(9,dogImages.message.length);
+        Assertions.assertEquals(8,dogImages.message.length);
     }
 }
