@@ -1,11 +1,15 @@
 
 package com.nolesiak.springhttpclient.countryinfoapi.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@Getter
+@Setter
 public class CountryInfo implements Serializable
 {
 

@@ -1,5 +1,5 @@
 
-package com.nolesiak.springhttpclient.countryinfoapi.domain;
+package com.nolesiak.springhttpclient.dogimageapi.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,15 +9,13 @@ import java.util.HashMap;
 import java.util.Map;
 @Getter
 @Setter
-public class Language implements Serializable
+public class DogImage implements Serializable
 {
 
-    public String iso6391;
-    public String iso6392;
-    public String name;
-    public String nativeName;
+    public String message;
+    public String status;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -4384490929028580382L;
+    private final static long serialVersionUID = -1127324752764689956L;
 
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;

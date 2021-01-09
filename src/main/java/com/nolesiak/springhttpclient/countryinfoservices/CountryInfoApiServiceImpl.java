@@ -1,4 +1,4 @@
-package com.nolesiak.springhttpclient.services;
+package com.nolesiak.springhttpclient.countryinfoservices;
 
 import com.nolesiak.springhttpclient.countryinfoapi.domain.CountryInfo;
 import org.springframework.stereotype.Service;
@@ -19,6 +19,13 @@ public class CountryInfoApiServiceImpl implements CountryInfoApiService {
 
         CountryInfo[] countryInfos = restTemplate.getForObject
                                     ("https://restcountries.eu/rest/v2/name/" + countryName, CountryInfo[].class);
+        return countryInfos;
+    }
+
+    @Override
+    public CountryInfo[] getAllCountriesInfo(){
+        CountryInfo[] countryInfos = restTemplate.getForObject
+                ("https://restcountries.eu/rest/v2/all", CountryInfo[].class);
         return countryInfos;
     }
 }

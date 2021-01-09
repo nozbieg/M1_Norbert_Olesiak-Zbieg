@@ -1,4 +1,4 @@
-package com.nolesiak.springhttpclient.services;
+package com.nolesiak.springhttpclient.countryinfoservices;
 
 import com.nolesiak.springhttpclient.countryinfoapi.domain.CountryInfo;
 import org.junit.jupiter.api.Assertions;
@@ -20,5 +20,12 @@ public class CountryInfoApiServiceImplTest {
         CountryInfo[] countryInfos = apiService.getCountryInfo("Poland");
 
         Assertions.assertEquals(1,countryInfos.length);
+    }
+
+    @Test
+    public void  testGetAllCountriesInfo() throws Exception{
+        CountryInfo[] countryInfos = apiService.getAllCountriesInfo();
+
+        Assertions.assertEquals(250,countryInfos.length);
     }
 }
