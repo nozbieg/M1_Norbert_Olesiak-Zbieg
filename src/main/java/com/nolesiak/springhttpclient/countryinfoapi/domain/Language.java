@@ -1,25 +1,19 @@
 
-package com.nolesiak.springhttpclient.api.domain;
+package com.nolesiak.springhttpclient.countryinfoapi.domain;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Translations implements Serializable
+public class Language implements Serializable
 {
 
-    public String de;
-    public String es;
-    public String fr;
-    public String ja;
-    public String it;
-    public String br;
-    public String pt;
-    public String nl;
-    public String hr;
-    public String fa;
+    public String iso6391;
+    public String iso6392;
+    public String name;
+    public String nativeName;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 463245518710542895L;
+    private final static long serialVersionUID = -4384490929028580382L;
 
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;

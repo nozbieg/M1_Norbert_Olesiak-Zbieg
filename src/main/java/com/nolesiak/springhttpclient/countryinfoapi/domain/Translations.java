@@ -1,20 +1,25 @@
 
-package com.nolesiak.springhttpclient.api.domain;
+package com.nolesiak.springhttpclient.countryinfoapi.domain;
 
 import java.io.Serializable;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class RegionalBloc implements Serializable
+public class Translations implements Serializable
 {
 
-    public String acronym;
-    public String name;
-    public List<Object> otherAcronyms = null;
-    public List<Object> otherNames = null;
+    public String de;
+    public String es;
+    public String fr;
+    public String ja;
+    public String it;
+    public String br;
+    public String pt;
+    public String nl;
+    public String hr;
+    public String fa;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 2535730307579269324L;
+    private final static long serialVersionUID = 463245518710542895L;
 
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;

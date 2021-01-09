@@ -1,5 +1,5 @@
 
-package com.nolesiak.springhttpclient.api.domain;
+package com.nolesiak.springhttpclient.countryinfoapi.domain;
 
 import java.io.Serializable;
 import java.util.HashMap;

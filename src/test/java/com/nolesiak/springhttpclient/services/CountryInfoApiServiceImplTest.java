@@ -1,6 +1,6 @@
 package com.nolesiak.springhttpclient.services;
 
-import com.nolesiak.springhttpclient.api.domain.CountryInfo;
+import com.nolesiak.springhttpclient.countryinfoapi.domain.CountryInfo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,10 +10,10 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class ApiserviceImplTest {
+public class CountryInfoApiServiceImplTest {
 
     @Autowired
-    ApiService apiService;
+    CountryInfoApiService apiService;
 
     @Test
     public void testGetCountryInfo() throws Exception{
